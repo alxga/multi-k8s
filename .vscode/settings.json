@@ -2,7 +2,8 @@
     "files.watcherExclude": {
       "**/.git/objects/**": true,
       "**/.git/subtree-cache/**": true,
-      "**/venv/*/**": true
+      "**/venv/*/**": true,
+      "**/google-cloud-sdk/": true
     },
     "files.exclude": {
       "**/__pycache__/": true,
@@ -11,7 +12,7 @@
       "**/venv/": true,
       "**/venvspark/": true,
       "**/venvweb/": true,
-      "MBTATracker.*": true
+      "**/google-cloud-sdk/": true
     },
     "python.pythonPath": "/usr/bin/python3.6",
     "python.linting.pylintArgs": [
