@@ -1,7 +1,7 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
-  name: k8s-multi-com-tls
+  name: fib-figuresfacts-me-tls
 spec:
   secretName: fib-figuresfacts-me
   issuerRef:
