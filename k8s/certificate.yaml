@@ -1,0 +1,18 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: k8s-multi-com-tls
+spec:
+  secretName: fib-figuresfacts-me
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: fib.figuresfacts.me
+  dnsNames:
+    - fib.figuresfacts.me
+  acme:
+    config:
+      - http01:
+        ingressClass: nginx
+        domains:
+          - fib.figuresfacts.me
